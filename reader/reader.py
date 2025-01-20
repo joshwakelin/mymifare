@@ -26,7 +26,6 @@ def initialize_reader():
         return r[0]
 
 
-# Connect to the card reader
 def connect_reader(reader):
     print(f"[GENERAL] Reader Detected: {reader}")
     connection = reader.createConnection()
