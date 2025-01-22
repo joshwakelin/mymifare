@@ -46,45 +46,42 @@ if reader:
         print()  
         print("Choose a menu option.")
         print()  
-        print("[READ] 1. Load Decryption Keys.")
-        print("[READ] 2. Print UID.")
-        print("[READ] 3. Read All Sectors.")
-        print("[READ] 4. Read Specific Sector.")
-        print("[SAVE] 5. Dump Card.")
-        print("[EXIT] 6. Exit.")
-        print("[LOAD] 7. Load Dump.")
+        print("[READ] 1. Print UID.")
+        print("[READ] 2. Read All Sectors.")
+        print("[READ] 3. Read Specific Sector.")
+        print("[SAVE] 4. Dump Card.")
+        print("[EXIT] 5. Exit.")
+        print("[LOAD] 6. Load Dump.")
         print()  
 
         choice = input("Enter your choice: ")
+       
         if choice == "1":
-            print("Coming soon!")
-
-        if choice == "2":
             read_uid(connection)
-        elif choice == "3":
+        elif choice == "2":
             all_sector_data = read_all_sectors(connection, num_sectors)
-        elif choice == "4":
+        elif choice == "3":
             sector = input("Enter sector: ")
             read_sector(connection, sector)
-        elif choice == "5":
+        elif choice == "4":
             filename = input("Enter filename: ")
             save_dump(all_sector_data, filename)
-        elif choice == "6":
+        elif choice == "5":
             print("[GENERAL] Exiting.")
             break
-        elif choice == "7":
+        elif choice == "6":
             dump_file = load_dump()
             if dump_file:
                 while True:
                     print()
-                    print("[CMPR] 8. Compare Loaded Dump to Current Card.")
-                    print("[WRTE] 9. Write Loaded Dump to Current Card.")
-                    print("[EXIT] 10. Back to Main Menu.")
+                    print("[CMPR] 7. Compare Loaded Dump to Current Card.")
+                    print("[WRTE] 8. Write Loaded Dump to Current Card.")
+                    print("[EXIT] 9. Back to Main Menu.")
                     print()
                     sub_choice = input("Enter your choice: ")
-                    if sub_choice == "8":
+                    if sub_choice == "7":
                         compare_card(dump_file, connection, num_sectors)
-                    elif sub_choice == "9":
+                    elif sub_choice == "8":
                         write_card(dump_file, connection)
-                    elif sub_choice == "10":
+                    elif sub_choice == "9":
                         break
