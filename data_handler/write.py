@@ -4,7 +4,6 @@ import json
 def write_card(dump_file, connection):
     print("[WRITE] Writing dump data to the card...")
     
-    # Load dump data from JSON file
     with open(dump_file, 'r') as file:
         dump_data = json.load(file)
 
