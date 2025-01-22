@@ -1,7 +1,6 @@
 import os
 import json
 
-
 from reader.operations import read_all_sectors
 
 def save_dump(sector_data, filename):
@@ -9,6 +8,10 @@ def save_dump(sector_data, filename):
         print("[ERROR] No sector data available to save.")
         return
 
+    # Ensure the "saves" directory exists
+    if not os.path.exists("saves"):
+        os.makedirs("saves")
+    
     file_path = os.path.join("saves", filename) + ".json"
     
     # Convert bytes to lists for JSON serialization
@@ -37,12 +40,10 @@ def load_dump():
 def compare_card(dump_file, connection, num_sectors):
     current_card_data = read_all_sectors(connection, num_sectors)
 
-
     with open(dump_file, 'r') as file:
         dump_data = json.load(file)
 
     differences = []
-
 
     for sector_str, blocks in dump_data.items():
         sector = int(sector_str)
