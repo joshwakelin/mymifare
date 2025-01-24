@@ -2,7 +2,7 @@
 <br />
 
 
-  <h2>MyMifare</h2>
+  #MyMifare
 
 
    <h4>An open sourced, byte manipulation tool for Mifare NFC cards.</h4>
