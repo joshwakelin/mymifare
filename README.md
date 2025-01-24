@@ -2,7 +2,7 @@
 <br />
 
 
-  <h2>mymifare</h2>
+  <h2>MyMifare</h2>
 
 
    <h4>An open sourced, byte manipulation tool for Mifare NFC cards.</h4>
@@ -14,8 +14,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-MyMifare is a versatile, easy-to-use byte manipulation software designed to seamlessly read, write, save, and edit Mifare card data. Lightweight by design, MyMifare runs directly from a terminal, making it an ideal solution for developers, hobbyists, and professionals looking for a streamlined tool without unnecessary overhead.
+MyMifare is a versatile, easy-to-use byte manipulation software designed to seamlessly read, write, save, and edit Mifare card data. Lightweight by design, MyMifare runs directly from a terminal, making it a easy solution for developers, hobbyists, and professionals looking for a basic tool without unnecessary overhead.
 
 With its intuitive command-line interface, MyMifare offers precise control over Mifare card sectors, blocks, and bytes, empowering users to manipulate data efficiently. The software supports common Mifare card operations, including key management, sector authentication, and backup creation, ensuring reliability and ease of use for a variety of applications.
 
@@ -24,9 +23,8 @@ Whether you're working in security, access control, public transit systems, or s
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [![Next][Next.js]][Next-url]
+* Python
+* Pyscaed
 
 
 <!-- GETTING STARTED -->
@@ -41,7 +39,7 @@ MyMifare requires Python and the necessary libraries to function correctly. To i
   pip install -r requirements.txt
   ```
 
- This command will install all the necessary Python packages listed in the requirements.txt file, which are essential for the proper operation of the software.
+ This command will install all the necessary Python packages listed in the requirements.txt file, which is required for proper operation.
 
 ### Hardware Requirements
 In addition to the software dependencies, MyMifare requires an NFC card reader to interact with Mifare cards. The software is compatible with a variety of NFC card readers, and was persoanlly tested using an **ACR122U.**
@@ -57,13 +55,11 @@ coming soon!
 
 coming soon!
 
-_For more examples, please refer to the [Documentation](https://example.com)_
-
 
 
 
 <!-- ROADMAP -->
-## Roadmap
+## Features
 
 - [x] z
 - [ ] z
