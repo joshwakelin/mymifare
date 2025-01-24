@@ -1,11 +1,8 @@
 <!-- PROJECT LOGO -->
 <br />
-<div align="center">
-  <a href="https://github.com/joshwakelin/mymifare">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
-  <h3 align="center">mymifare</h3>
+
+  <h3 >mymifare</h3>
 
   <p align="center">
     An open sourced, byte manipulation tool for Mifare NFC cards.
