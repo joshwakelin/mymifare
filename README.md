@@ -23,8 +23,8 @@ Whether you're working in security, access control, public transit systems, or s
 
 ### Built With
 
-* Python
-* (Pyscard)[https://pyscard.sourceforge.io/]
+* [Python](https://www.python.org/)
+* [Pyscard](https://pyscard.sourceforge.io/)
 
 
 <!-- GETTING STARTED -->
@@ -32,7 +32,7 @@ Whether you're working in security, access control, public transit systems, or s
 
 ### Software Prerequisites
 
-MyMifare requires Python and the necessary libraries to function correctly. To install the required dependencies, simply run the following command:
+MyMifare requires Python and the necessary libraries to function correctly. To install the required dependencies, simply run the following command in a terminal in the root folder:
 
 * pip
   ```sh
@@ -44,16 +44,22 @@ MyMifare requires Python and the necessary libraries to function correctly. To i
 ### Hardware Requirements
 In addition to the software dependencies, MyMifare requires an NFC card reader to interact with Mifare cards. The software is compatible with a variety of NFC card readers, and was persoanlly tested using an **ACR122U.**
 
-### Installation
+### Start-up
 
-coming soon!
+Startup is easy. After installing to the dependanies, run the following command in a terminal in the root folder
+* pip
+  ```sh
+  startup
+  ```
 
+  After startup is completed, MyMifare will attempt to establish a connection with a USB card reader, plugged into your PC or Laptop. Note, this has **3** attempts, before the program force closes. It's recommended you have your USB card reader and Mifare card on the reader prior to program startup. 
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+After the program has had dependancies installed and startup is completed, the main menu should appear, as depicted below.
 
-coming soon!
+Each menu item cooresponds to a 
 
 
 
@@ -61,9 +67,8 @@ coming soon!
 <!-- ROADMAP -->
 ## Features
 
-- [x] z
-- [ ] z
-
+- [x] 
+- [ ]
 
 
 
