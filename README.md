@@ -24,7 +24,7 @@ Whether you're working in security, access control, public transit systems, or s
 ### Built With
 
 * Python
-* Pyscaed
+* (Pyscard)[https://pyscard.sourceforge.io/]
 
 
 <!-- GETTING STARTED -->
