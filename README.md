@@ -49,7 +49,7 @@ In addition to the software dependencies, MyMifare requires an NFC card reader t
 Startup is easy. After installing to the dependanies, run the following command in a terminal in the root folder
 * pip
   ```sh
-  startup
+  py main.py
   ```
 
   After startup is completed, MyMifare will attempt to establish a connection with a USB card reader, plugged into your PC or Laptop. Note, this has **3** attempts, before the program force closes. It's recommended you have your USB card reader and Mifare card on the reader prior to program startup. 
